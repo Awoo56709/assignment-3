@@ -5,6 +5,7 @@ __pycache__/
 task1/tests/
 task2/tests/
 
+
 task1/.OTTER_LOG
 task2/.OTTER_LOG
 .DS_Store
