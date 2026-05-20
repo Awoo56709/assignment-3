@@ -1,0 +1,19 @@
+---
+title: "Task3: Considerations in High Dimensions - AI Prompt Refining"
+format: html
+editor: visual
+---
+
+# Intro
+The use of AI has become prolific and has become a "partner" in research and studying. This document is to record how misunderstandings or clarifications of topics can be illuminated (or not) through AI prompting given enough background information and prompt calibration.
+
+# Concept to Clarify
+I want clarification on why variable selection becomes unstable in high‑dimensional settings. In section 6.4, it explains that when p is large, many different subsets of predictors can appear equally predictive and that multicollinearity becomes so extreme that any variable can be written as a linear combination of the others. I found this to be a bit confusing/unclear as to why this causes forward selection, backward selection, or even lasso to choose different sets of predictors across different samples, even when the underlying signal is the same.
+
+
+# Prompt
+I’m a graduate student in environmental data science learning about high‑dimensional regression for my machine learning course. I’m reading Section 6.4 of An Introduction of Statistical Learning with applications in Python. I understand basic topics such as regressions, data spliting for training and testing, MSE, overfitting, variability etc but I’m confused about why variable selection becomes unstable when p is large, specifically, why different subsets of predictors can look equally predictive even when only a few variables truly drive the response. Can you explain this using a small, numerical example (for example, n = 30, p = 50) and avoid matrix notation? It would also help if you compared this instability to how ridge and lasso behave in the same setting. Moreover, if there is a possible environmental analogy that can be made, it would be very helpful. If you need to adjust the example, do so.
+
+# Generative AI Reflection
+
+For my prompt above, I used Claude. The prompt was more of a catch all approach where I cited the book, explained what I am familiar with, exactly where my disconnect is and asked for it to return explanation and maybe an analogy. I think this was successful in determining minimizing the number of prompts and increasing my chances of understanding of the topic because its multifaceted: the prompt contains background information, includes my understanding level, and asked for a theoretical and mental visual in the context of the field (environmental) and used related topics discussed in the section using lasso and ridge regression in its examples. Moreover but trying to add a constraint (n =30, p = 50) Claude actually had some pushback where it reasoned that more insight may be had at a simpler toy case, which it then used based on my prompt.
